@@ -23,6 +23,8 @@ curl $COMPOSER_URL -s -o $BUILD_DIR/bin/composer
 COMPOSER=$BUILD_DIR/bin/composer
 chmod +x $COMPOSER
 
+$COMPOSER self-update
+
 echo "-----> Installing Dependencies"
 echo "       Using `$COMPOSER --version`"
 cd $BUILD_DIR
